@@ -8,7 +8,7 @@ There is some notebooks illustrates different examples of analytical dashboards 
 #### Services Level
 - **[defi-contracts-evm](https://github.com/e183b796621afbf902067460/defi-contracts-evm)**
 - **[defi-providers-fabric](https://github.com/e183b796621afbf902067460/defi-providers-fabric)**
-- **[defi-trader-composite](https://github.com/e183b796621afbf902067460/head-trader-composite)**
+- **[defi-traders-composite](https://github.com/e183b796621afbf902067460/head-trader-composite)**
 #### Apps Level
 - **[defi-dwh-orm](https://github.com/e183b796621afbf902067460/defi-dwh-orm)**
 - **[defi-overviews-fabric](https://github.com/e183b796621afbf902067460/defi-overviews-fabric)**
