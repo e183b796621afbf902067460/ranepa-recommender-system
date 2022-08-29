@@ -1,4 +1,4 @@
-# DeFi ETL Infrastructure
+# DeFi Analytical Infrastructure
 There is some notebooks illustrates different examples of analytical dashboards which infrastructure provides
 
 ## Infrastructure includes
