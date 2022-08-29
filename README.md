@@ -16,7 +16,7 @@ There is some notebooks illustrates different examples of analytical dashboards 
 > Apache Airflow is used for ETL orchestration
 - **[defi-airflow](https://github.com/e183b796621afbf902067460/defi-airflow)**
 
-The main DWH layer contains 13 entities and can be scaled enough
+The main DWH layer contains 15 entities and can be scaled enough
 
 ## Notebooks
 
