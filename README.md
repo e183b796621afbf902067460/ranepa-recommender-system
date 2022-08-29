@@ -1,7 +1,7 @@
 # DeFi ETL Infrastructure
 There is some notebooks illustrates different examples of analytical dashboards which infrastructure provides
 
-## Infrastructure includes:
+## Infrastructure includes
 
 #### Interfaces Level
 - **[defi-interfaces-core](https://github.com/e183b796621afbf902067460/defi-interfaces-core)**
