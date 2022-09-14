@@ -5,6 +5,8 @@ There is some notebooks illustrates different examples of analytical dashboards 
 
 [3CRVLiquidityPoolOverview](https://nbviewer.org/github/e183b796621afbf902067460/defi-notebooks/blob/master/notebooks/3CRVLiquidityPoolOverview.ipynb)
 
+[sUSD/3CRVStakingPoolOverview](https://nbviewer.org/github/e183b796621afbf902067460/defi-notebooks/blob/master/notebooks/sUSD3CRVStakingPoolOverview.ipynb)
+
 ## Infrastructure includes
 
 #### Interfaces Level
