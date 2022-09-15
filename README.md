@@ -10,12 +10,12 @@ There is some notebooks illustrates different examples of analytical dashboards 
 ## Infrastructure includes
 
 #### Interfaces Level
-- **[defi-interfaces-core](https://github.com/e183b796621afbf902067460/defi-interfaces-core)**
+- **[defi-head-core](https://github.com/e183b796621afbf902067460/defi-head-core)**
 #### Frameworks Level
 - **[defi-contracts-evm](https://github.com/e183b796621afbf902067460/defi-contracts-evm)**
 #### Services Level
 - **[defi-providers-fabric](https://github.com/e183b796621afbf902067460/defi-providers-fabric)**
-- **[defi-traders-composite](https://github.com/e183b796621afbf902067460/head-trader-composite)**
+- **[hybrid-traders-composite](https://github.com/e183b796621afbf902067460/hybrid-traders-composite)**
 #### Apps Level
 - **[defi-dwh-orm](https://github.com/e183b796621afbf902067460/defi-dwh-orm)**
 - **[defi-overviews-fabric](https://github.com/e183b796621afbf902067460/defi-overviews-fabric)**
