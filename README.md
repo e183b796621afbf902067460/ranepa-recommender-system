@@ -1,5 +1,5 @@
 # DeFi Data Platform
-There is some notebooks illustrates different examples of analytical dashboards which platform provides
+There is some notebooks illustrates different examples of analytical dashboards which platform provides.
 
 ## Notebooks
 
