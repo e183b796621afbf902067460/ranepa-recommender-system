@@ -1,5 +1,5 @@
-# DeFi Analytical Infrastructure
-There is some notebooks illustrates different examples of analytical dashboards which infrastructure provides
+# DeFi Data Platform
+There is some notebooks illustrates different examples of analytical dashboards which platform provides
 
 ## Notebooks
 
@@ -23,4 +23,4 @@ There is some notebooks illustrates different examples of analytical dashboards 
 > Apache Airflow is used for ETL orchestration
 - **[defi-airflow](https://github.com/e183b796621afbf902067460/defi-airflow)**
 
-The main DWH layer modeled according to the Data Vault methodology and contains about 20+ entities
+The main DWH layer modeled according to the Data Vault methodology and contains about 20+ entities.
