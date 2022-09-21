@@ -14,11 +14,11 @@ There is some notebooks illustrates different examples of analytical dashboards 
 #### Frameworks Level
 - **[defi-contracts-evm](https://github.com/e183b796621afbf902067460/defi-contracts-evm)**
 #### Services Level
+- **[defi-overviews-fabric](https://github.com/e183b796621afbf902067460/defi-overviews-fabric)**
 - **[defi-providers-fabric](https://github.com/e183b796621afbf902067460/defi-providers-fabric)**
 - **[hybrid-traders-composite](https://github.com/e183b796621afbf902067460/hybrid-traders-composite)**
-#### Apps Level
+#### ORM Level
 - **[defi-dwh-orm](https://github.com/e183b796621afbf902067460/defi-dwh-orm)**
-- **[defi-overviews-fabric](https://github.com/e183b796621afbf902067460/defi-overviews-fabric)**
 
 > Apache Airflow is used for ETL orchestration
 - **[defi-airflow](https://github.com/e183b796621afbf902067460/defi-airflow)**
