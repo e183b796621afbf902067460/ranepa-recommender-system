@@ -18,7 +18,7 @@ There is some notebooks illustrates different examples of analytical dashboards 
 #### Services Level
 - **[defi-overviews-fabric](https://github.com/e183b796621afbf902067460/defi-overviews-fabric)**
 - **[defi-providers-fabric](https://github.com/e183b796621afbf902067460/defi-providers-fabric)**
-- **[hybrid-traders-composite](https://github.com/e183b796621afbf902067460/hybrid-traders-composite)**
+- **[defi-traders-composite](https://github.com/e183b796621afbf902067460/defi-traders-composite)**
 #### ORM Level
 - **[defi-dwh-orm](https://github.com/e183b796621afbf902067460/defi-dwh-orm)**
 
