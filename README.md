@@ -1,5 +1,5 @@
-# DeFi Analytical Infrastructure
-There is some notebooks illustrates different examples of analytical dashboards which infrastructure provides
+# DeFi Data Platform
+There is some notebooks illustrates different examples of analytical dashboards which platform provides.
 
 ## Notebooks
 
@@ -10,17 +10,17 @@ There is some notebooks illustrates different examples of analytical dashboards 
 ## Infrastructure includes
 
 #### Interfaces Level
-- **[defi-interfaces-core](https://github.com/e183b796621afbf902067460/defi-interfaces-core)**
+- **[defi-head-core](https://github.com/e183b796621afbf902067460/defi-head-core)**
 #### Frameworks Level
 - **[defi-contracts-evm](https://github.com/e183b796621afbf902067460/defi-contracts-evm)**
 #### Services Level
-- **[defi-providers-fabric](https://github.com/e183b796621afbf902067460/defi-providers-fabric)**
-- **[defi-traders-composite](https://github.com/e183b796621afbf902067460/head-trader-composite)**
-#### Apps Level
-- **[defi-dwh-orm](https://github.com/e183b796621afbf902067460/defi-dwh-orm)**
 - **[defi-overviews-fabric](https://github.com/e183b796621afbf902067460/defi-overviews-fabric)**
+- **[defi-providers-fabric](https://github.com/e183b796621afbf902067460/defi-providers-fabric)**
+- **[hybrid-traders-composite](https://github.com/e183b796621afbf902067460/hybrid-traders-composite)**
+#### ORM Level
+- **[defi-dwh-orm](https://github.com/e183b796621afbf902067460/defi-dwh-orm)**
 
 > Apache Airflow is used for ETL orchestration
 - **[defi-airflow](https://github.com/e183b796621afbf902067460/defi-airflow)**
 
-The main DWH layer contains 15 entities and can be scaled enough
+The main DWH layer modeled according to the Data Vault methodology and contains about 20+ entities.
