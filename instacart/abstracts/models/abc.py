@@ -3,7 +3,7 @@ from typing import final
 
 from instacart.interfaces.fabrics.interface import iFabric
 
-from instacart.fabrics.models.fabric import classifiersModelsFabric
+from instacart.fabrics.models.fabric import modelsFabric
 
 
 class InstaCartModelsAbstractFabric(ABC):
@@ -26,4 +26,4 @@ class InstaCartModelsAbstractFabric(ABC):
 
 instaCartModelsAbstractFabric = InstaCartModelsAbstractFabric()
 
-instaCartModelsAbstractFabric.add_fabric(fabric_name=classifiersModelsFabric.name(), fabric=classifiersModelsFabric)
+instaCartModelsAbstractFabric.add_fabric(fabric_name=modelsFabric.name(), fabric=modelsFabric)

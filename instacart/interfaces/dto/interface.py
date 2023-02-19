@@ -4,7 +4,7 @@ from typing import List
 import pandas as pd
 
 
-NROWS = os.getenv('NROWS', 200000)
+NROWS = os.getenv('NROWS', None)
 
 
 class iDto(ABC):

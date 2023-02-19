@@ -4,7 +4,7 @@ from instacart.decorators.camel2snake import camel2snake
 from instacart.handlers.models.catboost.model import InstaCartCatBoostClassifier
 
 
-class ClassifiersModelsFabric(iFabric):
+class ModelsFabric(iFabric):
 
     @classmethod
     @camel2snake
@@ -22,6 +22,6 @@ class ClassifiersModelsFabric(iFabric):
         return handler
 
 
-classifiersModelsFabric = ClassifiersModelsFabric()
+modelsFabric = ModelsFabric()
 
-classifiersModelsFabric.add_handler(name=InstaCartCatBoostClassifier.name(), handler=InstaCartCatBoostClassifier)
+modelsFabric.add_handler(name=InstaCartCatBoostClassifier.name(), handler=InstaCartCatBoostClassifier)

@@ -1,6 +1,6 @@
 from instacart.bridge.bridge import InstaCartBridgeConfigurator
 from instacart.abstracts.models.abc import instaCartModelsAbstractFabric
-from instacart.fabrics.models.fabric import ClassifiersModelsFabric
+from instacart.fabrics.models.fabric import ModelsFabric
 from instacart.handlers.models.catboost.model import InstaCartCatBoostClassifier
 
 from instacart.dto.products.dto import ProductsDto
@@ -18,7 +18,7 @@ mix = MixedProductsAndTransactionsDto(products=products, transactions=transactio
 
 model_class = InstaCartBridgeConfigurator(
     abstract=instaCartModelsAbstractFabric,
-    fabric_name=ClassifiersModelsFabric.name(),
+    fabric_name=ModelsFabric.name(),
     handler_name=InstaCartCatBoostClassifier.name()
 ).produce_handler()
 model = model_class(mix=mix)

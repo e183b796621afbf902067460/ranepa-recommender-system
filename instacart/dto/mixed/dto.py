@@ -6,7 +6,7 @@ from instacart.dto.products.dto import ProductsDto
 from instacart.dto.transactions.dto import TransactionsDto
 
 
-NTAIL = os.getenv('NTAIL', 5)
+NTAIL = os.getenv('NTAIL', 10)
 
 
 class MixedProductsAndTransactionsDto(object):
