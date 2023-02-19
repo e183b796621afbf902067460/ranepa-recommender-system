@@ -24,4 +24,4 @@ model_class = InstaCartBridgeConfigurator(
 model = model_class(mix=mix)
 
 model.instacart_train()
-model.instacart_predict()
+model.instacart_predict(is_save_to_csv=True)
