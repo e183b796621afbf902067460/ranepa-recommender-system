@@ -3,7 +3,7 @@ from typing import final
 
 from instacart.interfaces.fabrics.interface import iFabric
 
-from instacart.fabrics.models.classifiers.fabric import classifiersModelsFabric
+from instacart.fabrics.models.fabric import classifiersModelsFabric
 
 
 class InstaCartModelsAbstractFabric(ABC):

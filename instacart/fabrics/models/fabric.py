@@ -1,7 +1,7 @@
 from instacart.interfaces.fabrics.interface import iFabric
 from instacart.decorators.camel2snake import camel2snake
 
-from instacart.handlers.models.classifiers.catboost.model import InstaCartCatBoostClassifier
+from instacart.handlers.models.catboost.model import InstaCartCatBoostClassifier
 
 
 class ClassifiersModelsFabric(iFabric):

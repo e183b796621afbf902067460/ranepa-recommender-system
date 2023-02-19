@@ -1,5 +1,4 @@
 from instacart.interfaces.fabrics.interface import iFabric
-# from instacart.abstracts.abc import InstaCartAbstractFabric
 
 
 class InstaCartBridgeConfigurator:
