@@ -33,6 +33,7 @@ from instacart.dto.mixed.dto import MixedProductsAndTransactionsDto
 
 PRODUCTS_CSV_PATH = '<path to products.csv>'
 TRANSACTIONS_CSV_PATH = '<path to transactions.csv>'
+SUBMIT_PATH = '<path for submit.csv>'
 
 
 products = ProductsDto(csv_file_path=PRODUCTS_CSV_PATH)
@@ -50,7 +51,7 @@ Model class have two-overloaded methods that helps to train model and make predi
 
 ```python
 model.instacart_train()
-model.instacart_predict(is_save_to_csv=True)
+model.instacart_predict(is_save_to_csv=True, csv_path=SUBMIT_PATH)
 ```
 
 After that, we have `recommendations.csv` file that store top-10 recommendations for each user.
