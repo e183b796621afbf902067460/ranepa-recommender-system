@@ -1,4 +1,4 @@
-from typing import Type
+from typing import Type, Optional
 
 from catboost import CatBoostClassifier
 from sklearn.model_selection import train_test_split
@@ -61,7 +61,7 @@ class InstaCartCatBoostClassifier(CatBoostClassifier):
         _x, X, _y, Y = train_test_split(x, y, test_size=.01, stratify=y)
         self.fit(_x, _y)
 
-    def instacart_predict(self, is_save_to_csv: bool = False):
+    def instacart_predict(self, is_save_to_csv: bool = False, csv_path: Optional[str] = None):
         df = self.__prepared_df.drop(columns=MainFeature.name())
         self.__recommendations = self.predict_proba(df.values)
         self.__recommendations = pd.concat(
@@ -74,4 +74,4 @@ class InstaCartCatBoostClassifier(CatBoostClassifier):
         if is_save_to_csv:
             df = self.__recommendations.groupby(['user_id'], as_index=False).head(10)
             output = df.groupby(['user_id'], as_index=False).agg(lambda product_ids: ' '.join(str(value) for value in list(product_ids)))[['user_id', 'product_id']]
-            output.to_csv('recommendations.csv', index=False)
+            output.to_csv(csv_path, index=False)

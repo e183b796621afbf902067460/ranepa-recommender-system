@@ -10,6 +10,7 @@ from instacart.dto.mixed.dto import MixedProductsAndTransactionsDto
 
 PRODUCTS_CSV_PATH = '/home/user/repositories/defi-notebooks/products.csv'
 TRANSACTIONS_CSV_PATH = '/home/user/repositories/defi-notebooks/transactions.csv'
+SUBMIT_PATH = 'recommendations.csv'
 
 
 products = ProductsDto(csv_file_path=PRODUCTS_CSV_PATH)
@@ -24,4 +25,4 @@ model_class = InstaCartBridgeConfigurator(
 model = model_class(mix=mix)
 
 model.instacart_train()
-model.instacart_predict(is_save_to_csv=True)
+model.instacart_predict(is_save_to_csv=True, csv_path=SUBMIT_PATH)
