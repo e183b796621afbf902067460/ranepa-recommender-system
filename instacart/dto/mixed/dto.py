@@ -1,6 +1,5 @@
 import os
 import pandas as pd
-from functools import lru_cache
 
 from instacart.dto.products.dto import ProductsDto
 from instacart.dto.transactions.dto import TransactionsDto
@@ -37,6 +36,5 @@ class MixedProductsAndTransactionsDto(object):
         return self.transactions_filtered_df.merge(self.products_filtered_df, on=on, how=how)
 
     @property
-    @lru_cache
     def df(self) -> pd.DataFrame:
         return self._merge_filtered_df().groupby([self.USER_ID, self.PRODUCT_ID]).tail(NTAIL)
