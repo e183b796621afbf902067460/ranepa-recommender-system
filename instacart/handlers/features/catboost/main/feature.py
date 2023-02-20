@@ -18,33 +18,8 @@ class MainFeature(iFeature):
 
     @threadmethod
     def prepare_df(self, *args, **kwargs) -> pd.DataFrame:
-        globals()['df'] = self.mix.df
-        globals()['last_order_id_for_each_user_df'] = pysqldf(
-            '''
-               SELECT
-                   max(order_number) AS order_number,
-                   order_id
-                FROM 
-                    df
-                GROUP BY
-                    user_id
-            '''
-        )
-        last_transaction_for_each_user_df = pysqldf(
-            '''
-                SELECT
-                    *
-                FROM
-                    df
-                WHERE
-                    order_id IN (
-                        SELECT
-                            order_id
-                        FROM 
-                            last_order_id_for_each_user_df
-                    )
-            '''
-        )
+        last_order_id_for_each_user_df = self.mix.df.sort_values(by='order_number', ascending=True).drop_duplicates(self.mix.USER_ID, keep='last')['order_id']
+        last_transaction_for_each_user_df = self.mix.df[self.mix.df.order_id.isin(last_order_id_for_each_user_df)].reset_index(drop=True)
         return last_transaction_for_each_user_df \
             .groupby([self.mix.USER_ID, self.mix.PRODUCT_ID], sort=False) \
             .size() \

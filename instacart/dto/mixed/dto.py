@@ -16,6 +16,8 @@ class MixedProductsAndTransactionsDto(object):
     def __init__(self, products: ProductsDto, transactions: TransactionsDto) -> None:
         self._products, self._transactions = products, transactions
 
+        self._df: pd.DataFrame = self._merge_filtered_df().groupby([self.USER_ID, self.PRODUCT_ID]).tail(NTAIL)
+
     @property
     def products_dto(self):
         return self._products
@@ -37,4 +39,4 @@ class MixedProductsAndTransactionsDto(object):
 
     @property
     def df(self) -> pd.DataFrame:
-        return self._merge_filtered_df().groupby([self.USER_ID, self.PRODUCT_ID]).tail(NTAIL)
+        return self._df

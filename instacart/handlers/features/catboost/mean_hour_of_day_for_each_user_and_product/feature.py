@@ -20,18 +20,5 @@ class MeanHourOfDayForEachUserAndProduct(iFeature):
 
     @threadmethod
     def prepare_df(self, *args, **kwargs) -> pd.DataFrame:
-        globals()['df'] = self.mix.df
-        return pysqldf(
-            f'''
-                SELECT
-                    user_id,
-                    product_id,
-                    AVG(order_hour_of_day) AS {self.name()}
-                FROM
-                    df
-                GROUP BY
-                    user_id,
-                    product_id
-            '''
-        )
+        return self.mix.df.groupby([self.mix.USER_ID, self.mix.PRODUCT_ID], as_index=False).agg(mean=('order_hour_of_day', 'mean')).rename(columns={'mean': self.name()})
 

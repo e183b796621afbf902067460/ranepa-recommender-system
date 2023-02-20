@@ -20,18 +20,5 @@ class AllProductsCountForEachUserAndProductFeature(iFeature):
 
     @threadmethod
     def prepare_df(self, *args, **kwargs) -> pd.DataFrame:
-        globals()['df'] = self.mix.df
-        return pysqldf(
-            f'''
-                SELECT
-                    user_id,
-                    product_id,
-                    COUNT(*) AS {self.name()}
-                FROM
-                    df
-                GROUP BY
-                    user_id,
-                    product_id
-            '''
-        )
+        return self.mix.df.groupby([self.mix.USER_ID, self.mix.PRODUCT_ID]).size().reset_index(name=self.name())
 
